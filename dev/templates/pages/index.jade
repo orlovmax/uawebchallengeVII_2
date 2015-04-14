@@ -1,0 +1,25 @@
+- var pageLang = 'en';
+
+//- Here comes the nex mixins:
+//- -outdated browser message (depends of page language)
+//- -bemto mixin for Jade and BEM magic
+include ../helpers/mixins
+
+doctype html
+html(lang='en')
+	head
+		// Meta information
+		include ../components/meta
+
+		// Head external resources
+		include ../components/common/head_src
+
+	body
+		// Project stub
+		include ../components/parked/parked.html
+
+		// Browser update screen
+		mixin ie-out()
+
+		// Body external resources
+		include ../components/common/body_src
