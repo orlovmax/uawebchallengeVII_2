@@ -1,0 +1,14 @@
+extends ../layouts/main
+
+block variables
+	- var page = 'contacts';
+	- var pageTitle = 'Poultry farm | Contacts';
+	- var pageDescription = 'You`ll love our chicken';
+
+block content
+
+	// Map section
+	include ../components/_blocks/_map
+
+	// Contact form
+	include ../components/contacts/_contact-form

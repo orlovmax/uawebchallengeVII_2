@@ -1,0 +1,17 @@
+extends ../layouts/main
+
+block variables
+	- var page = 'services';
+	- var pageTitle = 'Poultry farm | Services';
+	- var pageDescription = 'You`ll love our chicken';
+
+block content
+
+	// Services list
+	include ../components/services/_services-list
+
+	// Extra service section
+	include ../components/services/_services-extra
+
+	// Special offers section
+	include ../components/services/_services-offers

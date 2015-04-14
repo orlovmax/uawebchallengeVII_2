@@ -1,0 +1,11 @@
+extends ../layouts/main
+
+block variables
+	- var page = 'blog';
+	- var pageTitle = 'Poultry farm | Blog';
+	- var pageDescription = 'You`ll love our chicken';
+
+block content
+
+	// Blog list
+	include ../components/blog/_blog-list

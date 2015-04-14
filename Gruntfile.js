@@ -309,8 +309,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-processhtml');
     grunt.loadNpmTasks('grunt-shell');
 
-    grunt.registerTask('default', ['newer:concat',
-                                   'newer:sass',
+    grunt.registerTask('default', ['newer:sass',
                                    'newer:jade',
                                    'newer:imagemin',
                                    'newer:copy',
