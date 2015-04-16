@@ -12,26 +12,26 @@ doctype html
 html(lang='en')
 	head
 		// Meta information
-		include ../components/_general/_meta
+		include ../components/general/_meta
 
 		// Head external resources
-		include ../components/_general/_head-src
+		include ../components/general/_head-src
 
 	body
 		// Main header information
-		include ../components/_blocks/_header
+		include ../components/blocks/_header
 
 		// Here comes page content
 		block content
 
 		// Widgets section
-		include ../components/_blocks/_widgets
+		include ../components/blocks/_widgets
 
 		// Main footer
-		include ../components/_blocks/_footer
+		include ../components/blocks/_footer
 
 		// Browser update screen
 		mixin ie-out()
 
 		// Body external resources
-		include ../components/_general/_body-src
+		include ../components/general/_body-src

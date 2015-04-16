@@ -1,0 +1,42 @@
++b('section').screen_slider_first
+	.container
+		// Hidden section title (just useful thing)
+		+e('h2').title_light._hidden Hi everyone!
+		+e('div').number_light 01
+
+		// Carousel
+		+b('ul').carousel
+			// Carousel controls
+			+e.controls
+				+e.prev.icon.icon_prev(href='#') Previous
+				+e.next.icon.icon_next(href='#') Next
+
+			// Carousel item
+			+e.item.is-visible(data-bg='first')
+				+e('h3').item-title_light
+					| You'll
+					br
+					| love our
+					br
+					| chicken
+				+e('p').item-descr_light Vestibulum libero nisl porta vel scele
+
+			// Carousel item
+			+e.item(data-bg='second')
+				+e('h3').item-title_light
+					| You'll
+					br
+					| love our
+					br
+					| chicken
+				+e('p').item-descr_light Vestibulum libero nisl porta vel scele
+
+			// Carousel item
+			+e.item(data-bg='third')
+				+e('h3').item-title_light
+					| You'll
+					br
+					| love our
+					br
+					| chicken
+				+e('p').item-descr_light Vestibulum libero nisl porta vel scele
