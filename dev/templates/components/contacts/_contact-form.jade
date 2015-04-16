@@ -1,0 +1,55 @@
++b('section').screen_dark
+	.container
+		+e('h2').title_light Contact form
+
+		// Contact form
+		+b('form').form.js-form(action='form/', method='post')
+			+e('div').element
+				+e('input').field(
+					name='name',
+					type='text',
+					placeholder='Name',
+					required='required',
+					data-validation='length illegal-field',
+					data-validation-length='2-100',
+					data-validation-error-msg='Field is empty or contain invalid characters'
+					)
+
+			+e('div').element
+				+e('input').field(
+					name='email',
+					type='email',
+					placeholder='Email',
+					required='required',
+					data-validation='email',
+					data-validation-error-msg='Field is empty or contain invalid characters',
+					data-validation-allowing='-_.',
+					)
+
+			+e('div').element
+				+e('input').field(
+					name='phone',
+					type='phone',
+					placeholder='Phone',
+					required='required',
+					data-validation='phone',
+					data-validation-error-msg='Field is empty or contain invalid characters',
+					data-validation-allowing='-_.',
+					)
+
+			+e('div').element
+				textarea.field(
+					name='message',
+					placeholder='Message',
+					required='required',
+					data-validation='length illegal-text',
+					data-validation-length="min3",
+					data-validation-error-msg='Field is empty or contain invalid characters'
+					)
+
+			+e('div').element_submit
+				input.btn.btn_form-submit.js-submit(
+					name='submit',
+					type='submit',
+					value='Submit'
+					)

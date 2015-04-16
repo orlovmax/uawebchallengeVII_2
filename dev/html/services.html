@@ -22,6 +22,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114x114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-precomposed.png">
+    <!-- Google maps api js-->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <!-- Main stylesheet--><!-- build:css css/screen.min.css -->
     <link rel="stylesheet" href="css/screen.css"><!-- /build -->
     <!-- Browser update screen styles--><!--[if lt IE 8]><link rel="stylesheet" href="css/ie-out.min.css"><![endif]-->
@@ -31,12 +33,85 @@
   </head>
   <body>
     <!-- Main header information-->
+    <!-- Page header-->
+    <header class="main-header">
+      <div class="container">
+        <h1 class="logo">Poultry farm</h1>
+        <!-- Main navigaion-->
+        <!-- Define menu items and link-->
+        <!-- Build menu and highlight active item-->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <div class="is-active nav__link">Services
+              </div>
+            </li>
+            <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a>
+            </li>
+            <li class="nav__item"><a href="contacts.html" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <!-- Here comes page content-->
     <!-- Services list-->
     <!-- Extra service section-->
     <!-- Special offers section-->
     <!-- Widgets section-->
+    <section class="screen screen_light">
+      <div class="container">
+        <h2 class="screen__title screen__title_dark screen__title_hidden">Get in touch!
+        </h2>
+        <!-- Widgets area-->
+        <div class="widgets">
+          <!-- Common text widget-->
+          <div class="widget">
+            <h3 class="widget__title">About us
+            </h3>
+            <p class="widget__info">Lorem ipsum dolor sit amet consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonu mmy hendrerit mauris. Phasellu porta. Fusce suscipit vari.
+            </p>
+          </div>
+          <!-- Locations widget-->
+          <div class="widget">
+            <h3 class="widget__title">Locations
+            </h3>
+            <div class="widget__location">
+              <p class="widget__addr">9863 - 9867 Mill Road,<br>Cambridge, MG09 99HT
+              </p><a href="tel:+18005596580" class="widget__phone">Freephone: +1 800 559 6580</a>
+            </div>
+            <div class="widget__location">
+              <p class="widget__addr">9870 St Vincent Place,<br>Glasgow, DC 45 Fr 45.
+              </p><a href="tel:+18005596580" class="widget__phone">Freephone: +1 800 559 6580</a>
+            </div>
+          </div>
+          <!-- Social widget-->
+          <div class="widget">
+            <h3 class="widget__title">Follow us
+            </h3>
+            <ul class="social">
+              <li class="social__item"><a href="#" class="iconfont iconfont_gplus social__link">Google plus</a>
+              </li>
+              <li class="social__item"><a href="#" class="iconfont iconfont_pin social__link">Pinterest</a>
+              </li>
+              <li class="social__item"><a href="#" class="iconfont iconfont_twi social__link">Twitter</a>
+              </li>
+              <li class="social__item"><a href="#" class="iconfont iconfont_fb social__link">Facebook</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Main footer-->
+    <footer class="main-footer">
+      <div class="container">
+        <p class="main-footer__copyright">Poultry farm &copy; 2015
+        </p>
+      </div>
+    </footer>
     <!-- Browser update screen--><!--[if lt IE 8]><div class="browser-msg"><h2 class="browser-msg__title">Houston we've had a problem</h2><p class="browser-msg__info">It looks like you’re using an insecure version of Internet Explorer.<br>Using an outdated browser makes your computer unsafe.</p><h3 class="browser-msg__sub">For the best experience on the web, please update your browser.</h3><ul class="browser-msg__list"><li class="browser-msg__item"><a href="http://www.google.com/chrome" title="Google Chrome"><span class="browser-item__img chrome"></span><h2 class="browser-item__title">Google Chrome</h2><p class="browser-item__descr">Built for the modern web and designed to be fast in every possible way.</p><p class="browser-item__note">Visit official website for more info</p></a></li><li class="browser-msg__item"><a href="http://www.firefox.com/" title="Mozilla Firefox"><span class="browser-item__img firefox"></span><h2 class="browser-item__title">Mozilla Firefox</h2><p class="browser-item__descr">Committed to you, your privacy and an open Web.</p><p class="browser-item__note">Visit official website for more info</p></a></li><li class="browser-msg__item"><a href="http://www.apple.com/safari/" title="Apple Safari"><span class="browser-item__img safari"></span><h2 class="browser-item__title">Safari</h2><p class="browser-item__descr">The smartest way to surf. Wait less and browse more.</p><p class="browser-item__note">Visit official website for more info</p></a></li><li class="browser-msg__item"><a href="http://www.opera.com/" title="Opera"><span class="browser-item__img opera"></span><h2 class="browser-item__title">Opera</h2><p class="browser-item__descr">Made to discover. Get a better experience.</p><p class="browser-item__note">Visit official website for more info</p></a></li><li class="browser-msg__item"><a href="http://windows.microsoft.com/ie" title="Microsoft Internet Explorer"><span class="browser-item__img ie"></span><h2 class="browser-item__title">Internet Explorer</h2><p class="browser-item__descr">Fast and fluid. Stay safer as you browse.</p><p class="browser-item__note">Visit official website for more info</p></a></li></ul><p class="browser-msg__info">Thank you :)</p></div><![endif]-->
     <!-- Body external resources--><!-- build:js js/vendor/vendor.min.js -->
     <script src="js/vendor/vendor.js"></script><!-- /build -->
