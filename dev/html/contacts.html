@@ -76,10 +76,11 @@
             <input name="phone" type="tel" placeholder="Phone" required="required" data-validation="phone" data-validation-error-msg="Field is empty or contain invalid characters" data-validation-allowing="-_." class="form__field"/>
           </div>
           <div class="form__element">
-            <textarea name="message" placeholder="Message" required="required" data-validation="length illegal-text" data-validation-length="min3" data-validation-error-msg="Field is empty or contain invalid characters" class="field"></textarea>
+            <textarea name="message" placeholder="Message" required="required" data-validation="length illegal-text" data-validation-length="min3" data-validation-error-msg="Field is empty or contain invalid characters" class="form__field">
+            </textarea>
           </div>
           <div class="form__element form__element_submit">
-            <input name="submit" type="submit" value="Submit" class="btn btn_form-submit js-submit">
+            <input name="submit" type="submit" value="Submit" class="form__submit js-submit"/>
           </div>
         </form>
       </div>

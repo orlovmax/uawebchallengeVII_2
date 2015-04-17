@@ -318,8 +318,7 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('bower-dev', ['bower_concat',
-                                     'clean:gitkeep',
-                                     'clean:bower'
+                                     // 'clean:bower'
     ]);
 
     grunt.registerTask('regen', ['concat',
