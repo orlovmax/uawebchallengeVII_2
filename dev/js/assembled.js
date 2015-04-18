@@ -2,7 +2,7 @@ google.maps.event.addDomListener(window, 'load', init);
 var map;
 function init() {
 	var mapOptions = {
-		center: new google.maps.LatLng(35.406505, -119.107333),
+		center: new google.maps.LatLng(35.386505, -119.100633),
 		zoom: 10,
 		zoomControl: false,
 		zoomControlOptions: {
@@ -27,7 +27,7 @@ function init() {
 	};
 	var mapElement = document.getElementById('gmap');
 	var map = new google.maps.Map(mapElement, mapOptions);
-	var locations = [['Poultry farm', '', '', '', '', 35.406505, -119.107333, '../img/marker.png']];
+	var locations = [['Poultry farm', '', '', '', '', 35.396505, -119.116333, '../img/marker.png']];
 	for (i = 0; i < locations.length; i++) {
 		if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
 		if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
@@ -79,3 +79,12 @@ function init() {
 	// }
 }
 
+// Draft solution for screen parallax
+jQuery(document).ready(function(){
+  $(window).scroll(function(){
+		var scrolled = $(window).scrollTop();
+		$('.js-parallaxItem').each(function(){
+			$(this).css('bottom',($(window).scrollTop()-$(this).closest('.js-parallax').offset().top) * 1.2);
+    	});
+	});
+ });

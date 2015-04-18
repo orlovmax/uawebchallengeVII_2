@@ -1,0 +1,191 @@
+
+// Page section
+.screen
+	position: relative
+	width: 100%
+
+	// Section background colors and images
+	&_light
+		background: $c-light url('../img/pattern.png') repeat
+
+	&_dark
+		background: $c-dark url('../img/pattern.png') repeat
+
+	&_slider
+		min-height: 915px
+		padding-top: 240px
+		background-color: $c-dark
+		background-position: center center
+		background-repeat: no-repeat
+		+bg-cover
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+			z-index: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(0,0,0,.3)
+
+		&_first
+			background-image: url('../img/bg/s1.jpg')
+
+		&_second
+			background-image: url('../img/bg/s2.jpg')
+
+		&_third
+			background-image: url('../img/bg/s3.jpg')
+
+	&_welcome
+		padding: 260px 0 245px
+		background: #fafafa url('../img/bg/wel.jpg') center center no-repeat
+		+bg-size(cover)
+		@media screen and (max-width: 960px)
+			padding: 150px 0 150px
+		@media screen and (max-width: 720px)
+			padding: 100px 0 100px
+			background-image: none
+		@media screen and (max-width: 480px)
+			padding: 50px 0 50px
+
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+			z-index: 0
+			width: 100%
+			height: 100%
+			background: url('../img/pattern.png') repeat
+
+
+	&_events
+		min-height: 885px
+		padding-top: 190px
+		background-color: $c-dark
+		background: url('../img/bg/ev.jpg') center center no-repeat
+		+bg-cover
+
+	&_about
+		min-height: 880px
+		padding: 195px 0 300px
+		background-color: $c-dark
+		background: url('../img/bg/about.jpg') top center no-repeat
+		+bg-cover
+
+	&_quality
+		min-height: 880px
+		padding-top: 155px
+
+	&_testimonials
+		min-height: 885px
+		padding-top: 210px
+
+	&_widgets
+		padding: 247px 0 40px
+		@media screen and (max-width: 960px)
+			padding-top: 150px
+		@media screen and (max-width: 720px)
+			padding-top: 100px
+		@media screen and (max-width: 480px)
+			padding-top: 50px
+
+	&_service-extra
+		background-color: $c-dark
+		background: url('../img/bg/serv.jpg') center center no-repeat
+		+bg-cover
+
+// Page section info
+.screen__info
+	float: left
+	+gs-col(6)
+	@media screen and (max-width: 960px)
+		+gs-col(8)
+	@media screen and (max-width: 720px)
+		+gs-col(12)
+
+	&_left
+		float: left
+	&_right
+		float: right
+
+// Page section title
+.screen__title
+	font-family: $f-serif
+	font-size: 70px
+	line-height: 1
+	@media screen and (max-width: 960px)
+		font-size: 50px
+	@media screen and (max-width: 720px)
+		font-size: 40px
+
+	&_hidden
+		display: none
+	&_dark
+		color: $c-dark
+	&_light
+		color: $c-light
+	&_welcome
+		margin-bottom: 55px
+		letter-spacing: -2px
+		@media screen and (max-width: 720px)
+			margin-bottom: 30px
+		@media screen and (max-width: 480px)
+			margin-bottom: 20px
+	&_events
+		margin-bottom: 70px
+		letter-spacing: -2px
+		@media screen and (max-width: 720px)
+			margin-bottom: 30px
+		@media screen and (max-width: 480px)
+			margin-bottom: 20px
+	&_about
+		margin-bottom: 65px
+		letter-spacing: -1px
+		@media screen and (max-width: 720px)
+			margin-bottom: 30px
+		@media screen and (max-width: 480px)
+			margin-bottom: 20px
+	&_quality
+		margin-bottom: 65px
+		letter-spacing: -1px
+		+gs-col(12)
+		@media screen and (max-width: 720px)
+			margin-bottom: 30px
+		@media screen and (max-width: 480px)
+			margin-bottom: 20px
+	&_testimonials
+		margin-bottom: 55px
+		letter-spacing: -2px
+		+gs-col(12)
+		@media screen and (max-width: 720px)
+			margin-bottom: 30px
+		@media screen and (max-width: 480px)
+			margin-bottom: 20px
+
+.screen__descr
+	margin-bottom: 23px
+	font-family: $f-serif
+	font-size: 26px
+	line-height: 1
+
+	&_dark
+		color: $c-dark
+	&_light
+		color: $c-light
+
+.screen__excerpt
+	margin-bottom: 24px
+	font-family: $f-light
+	font-size: 13px
+	line-height: 26px
+
+	&_dark
+		color: $c-dark
+	&_light
+		color: $c-light

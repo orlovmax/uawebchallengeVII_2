@@ -1,0 +1,61 @@
+// Custom grid system
+
+// Defaults
+// GS width unit must be the same as fallback
+$gs-width: 100%
+$total: 12
+$gutter: 30px
+$fallback: 2%
+
+// Common math
+// Column margins math
+$half-gutter: $gutter / 2
+$half-fallback: $fallback / 2
+
+// Column width math
+@function col-width($count, $total: $total, $gs-width: $gs-width)
+	@return ($gs-width / $total) * $count
+
+
+
+// Calc() mixin
+=calc($property, $expression)
+	#{$property}: -webkit-calc(#{$expression})
+	#{$property}: -moz-calc(#{$expression})
+	#{$property}: calc(#{$expression})
+
+// Clearfix
+=gs_clear
+	&:after
+		content: ''
+		clear: both
+		display: block
+		width: 100%
+		height: 0
+
+// Grid container
+=gs-container()
+	width: $gs-width
+	+gs_clear
+
+
+// Columns
+=gs-col($count)
+	width: col-width($count) - $fallback
+	+calc(width, #{col-width($count)} - $gutter)
+	margin-left:  $half-fallback
+	margin-right: $half-fallback
+	+calc(margin-left, $half-gutter)
+	+calc(margin-right, $half-gutter)
+
+
+// Push column
+=gs-push($count)
+	margin-left: col-width($count) + $half-fallback
+	+calc(margin-left, #{col-width($count)} + $half-gutter)
+
+
+// Pull column
+=gs-pull($count)
+	margin-right: col-width($count) + $half-fallback
+	+calc(margin-right, #{col-width($count)} + $half-gutter)

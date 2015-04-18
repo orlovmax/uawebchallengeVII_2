@@ -12,9 +12,17 @@ html, body
 
 body
 	background-color: $c-light
-	// +layout($position: -278px, $layout-url: "../01.jpg", $layout-opacity: 0.5, $grid-opacity: 0, $cell-width: 10px, $cell-height: 10px, $line-color: #ccc)
+	// +layout($position: auto, $layout-url: "../011.jpg", $layout-opacity: 0.5, $grid-opacity: .5, $cell-width: 10px, $cell-height: 10px, $line-color: #ccc)
+
+.container
+	position: relative
+	max-width: 1200px
+	margin: 0 auto
+	overflow: hidden
+	+clearfix
 
 a
+	text-decoration: none
 	color: $c-dark
 	outline: none
 

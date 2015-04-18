@@ -58,47 +58,63 @@
     </header>
     <!-- Here comes page content-->
     <!-- Slider section-->
-    <section class="screen screen_slider_first">
+    <section class="screen screen_slider screen_slider_first">
+      <!-- Parallax container-->
+      <div class="js-parallax parallax">
+        <div class="parallax__inner">
+          <div class="js-parallaxItem parallax__number parallax__number_left parallax__number_light">01
+          </div>
+        </div>
+      </div>
+      <!-- Section content-->
       <div class="container">
         <!-- Hidden section title (just useful thing)-->
         <h2 class="screen__title screen__title_hidden screen__title_light">Hi everyone!
         </h2>
-        <div class="screen__number screen__number_light">01
+        <div class="screen__info screen__info_right">
+          <!-- Carousel-->
+          <ul class="carousel">
+            <!-- Carousel controls-->
+            <li class="carousel__controls"><a href="#" class="carousel__item carousel__item_prev">Previous</a><a href="#" class="carousel__item carousel__item_next">Next</a>
+            </li>
+            <!-- Carousel item-->
+            <li data-bg="first" class="carousel__item is-visible">
+              <h3 class="carousel__item-title carousel__item-title_light">You'll<br>love our<br>chicken
+              </h3>
+              <p class="carousel__item-descr carousel__item-descr_light">Vestibulum libero nisl porta vel scele
+              </p>
+            </li>
+            <!-- Carousel item-->
+            <li data-bg="second" class="carousel__item">
+              <h3 class="carousel__item-title carousel__item-title_light">You'll<br>love our<br>chicken
+              </h3>
+              <p class="carousel__item-descr carousel__item-descr_light">Vestibulum libero nisl porta vel scele
+              </p>
+            </li>
+            <!-- Carousel item-->
+            <li data-bg="third" class="carousel__item">
+              <h3 class="carousel__item-title carousel__item-title_light">You'll<br>love our<br>chicken
+              </h3>
+              <p class="carousel__item-descr carousel__item-descr_light">Vestibulum libero nisl porta vel scele
+              </p>
+            </li>
+          </ul>
         </div>
-        <!-- Carousel-->
-        <ul class="carousel">
-          <!-- Carousel controls-->
-          <li class="carousel__controls"><a href="#" class="carousel__item carousel__item_prev">Previous</a><a href="#" class="carousel__item carousel__item_next">Next</a>
-          </li>
-          <!-- Carousel item-->
-          <li data-bg="first" class="carousel__item is-visible">
-            <h3 class="carousel__item-title carousel__item-title_light">You'll<br>love our<br>chicken
-            </h3>
-            <p class="carousel__item-descr carousel__item-descr_light">Vestibulum libero nisl porta vel scele
-            </p>
-          </li>
-          <!-- Carousel item-->
-          <li data-bg="second" class="carousel__item">
-            <h3 class="carousel__item-title carousel__item-title_light">You'll<br>love our<br>chicken
-            </h3>
-            <p class="carousel__item-descr carousel__item-descr_light">Vestibulum libero nisl porta vel scele
-            </p>
-          </li>
-          <!-- Carousel item-->
-          <li data-bg="third" class="carousel__item">
-            <h3 class="carousel__item-title carousel__item-title_light">You'll<br>love our<br>chicken
-            </h3>
-            <p class="carousel__item-descr carousel__item-descr_light">Vestibulum libero nisl porta vel scele
-            </p>
-          </li>
-        </ul>
       </div>
     </section>
     <!-- Welcome section-->
     <section class="screen screen_welcome">
+      <!-- Parallax container-->
+      <div class="js-parallax parallax">
+        <div class="parallax__inner">
+          <div class="js-parallaxItem parallax__number parallax__number_dark parallax__number_right">02
+          </div>
+        </div>
+      </div>
+      <!-- Section content-->
       <div class="container">
-        <div class="screen__info">
-          <h2 class="screen__title screen__title_dark">Welcome
+        <div class="screen__info screen__info_left">
+          <h2 class="screen__title screen__title_dark screen__title_welcome">Welcome
           </h2>
           <h3 class="screen__descr screen__descr_dark">Duisac turpis. Integer rutrum ante
           </h3>
@@ -107,17 +123,21 @@
           <p class="screen__excerpt screen__excerpt_dark">Duisac turpis. Integer rutrum ante eu lacuestilum libero nisl porta vel sceleri eget malesuada at neqVivamus eget nibh. Etiam ursus leo vel metus. Nulla facil nec eroestibulum ante ipsu pharetra auue nec augentum. Donec ielit vel ip elit magnaec porta diam eu massa. Quise diam lorem interdum vitaapibus ac scelee vitae pedec eget tellus non erat lacinia ferme.
           </p>
         </div>
-        <div class="screen__number screen__number_dark">02
-        </div>
       </div>
     </section>
     <!-- Events section-->
     <section class="screen screen_events">
-      <div class="container">
-        <div class="screen__number screen__number_accent">03
+      <!-- Parallax container-->
+      <div class="js-parallax parallax">
+        <div class="parallax__inner">
+          <div class="js-parallaxItem parallax__number parallax__number_accent parallax__number_left">03
+          </div>
         </div>
-        <div class="screen__info">
-          <h2 class="screen__title screen__title_light">Events
+      </div>
+      <!-- Section content-->
+      <div class="container">
+        <div class="screen__info screen__info_right">
+          <h2 class="screen__title screen__title_events screen__title_light">Events
           </h2>
           <!-- Scroller-->
           <ul class="scroller">
@@ -187,25 +207,31 @@
     </section>
     <!-- About section-->
     <section class="screen screen_about">
-      <div class="container">
-        <div class="screen__info">
-          <h2 class="screen__title screen__title_dark">What we do
-          </h2>
-          <h3 class="screen__descr screen__descr_dark">Duisac turpis. Integer rutrum ante
-          </h3>
-          <p class="screen__excerpt screen__excerpt_dark">Mauris fermeum dictum magn. Sed loreet aliquam leote llus dolor dapibus eget elementum vel curs elfend elit. Aenean aucto. wisi et urna. Aliqat volutpat.
-          </p>
-          <p class="screen__excerpt screen__excerpt_dark">Duisac turpis. Integer rutrum ante eu lacuestilum libero nisl porta vel sceleri eget malesuada at neqVivamus eget nibh. Etiam ursus leo vel metus. Nulla facil nec eroestibulum ante ipsu pharetra auue nec augentum. Donec ielit vel ip elit magnaec porta diam eu massa. Quise diam lorem interdum vitaapibus ac scelee vitae pedec eget tellus non erat lacinia ferme.
-          </p>
+      <!-- Parallax container-->
+      <div class="js-parallax parallax">
+        <div class="parallax__inner">
+          <div class="js-parallaxItem parallax__number parallax__number_light parallax__number_right">04
+          </div>
         </div>
-        <div class="screen__number screen__number_dark">04
+      </div>
+      <!-- Section content-->
+      <div class="container">
+        <div class="screen__info screen__info_left">
+          <h2 class="screen__title screen__title_about screen__title_light">What we do
+          </h2>
+          <h3 class="screen__descr screen__descr_light">Duisac turpis. Integer rutrum ante
+          </h3>
+          <p class="screen__excerpt screen__excerpt_light">Mauris fermeum dictum magn. Sed loreet aliquam leote llus dolor dapibus eget elementum vel curs elfend elit. Aenean aucto. wisi et urna. Aliqat volutpat.
+          </p>
+          <p class="screen__excerpt screen__excerpt_light">Duisac turpis. Integer rutrum ante eu lacuestilum libero nisl porta vel sceleri eget malesuada at neqVivamus eget nibh. Etiam ursus leo vel metus. Nulla facil nec eroestibulum ante ipsu pharetra auue nec augentum. Donec ielit vel ip elit magnaec porta diam eu massa. Quise diam lorem interdum vitaapibus ac scelee vitae pedec eget tellus non erat lacinia ferme.
+          </p>
         </div>
       </div>
     </section>
     <!-- Quality section-->
-    <section class="screen screen_light">
+    <section class="screen screen_light screen_quality">
       <div class="container">
-        <h2 class="screen__title screen__title_dark">Quality
+        <h2 class="screen__title screen__title_dark screen__title_quality">Quality
         </h2>
         <!-- Quality list-->
         <ul class="quality">
@@ -249,9 +275,9 @@
       </div>
     </section>
     <!-- Testimonials section-->
-    <section class="screen screen_dark">
+    <section class="screen screen_dark screen_testimonials">
       <div class="container">
-        <h2 class="screen__title screen__title_light">Testimonials
+        <h2 class="screen__title screen__title_light screen__title_testimonials">Testimonials
         </h2>
         <!-- Customer testimonial-->
         <figure class="testimonial"><img src="../img/tes/tes.jpg" alt="customer avatar" class="testimonial__picture" title=""/>
@@ -271,7 +297,7 @@
     <!-- Map section-->
     <section id="gmap" class="gmap"></section>
     <!-- Widgets section-->
-    <section class="screen screen_light">
+    <section class="screen screen_light screen_widgets">
       <div class="container">
         <!-- Hidden section title (just useful thing)-->
         <h2 class="screen__title screen__title_dark screen__title_hidden">Get in touch!
@@ -279,31 +305,31 @@
         <!-- Widgets area-->
         <div class="widgets">
           <!-- Common text widget-->
-          <div class="widget">
+          <div class="widget widget_common">
             <h3 class="widget__title">About us
             </h3>
-            <p class="widget__info">Lorem ipsum dolor sit amet consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonu mmy hendrerit mauris. Phasellu porta. Fusce suscipit vari.
+            <p class="widget__info">Lorem ipsum dolor sit amet consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonu mmy hendrerit mauris. Phasellu porta.<br>Fusce suscipit vari.
             </p>
           </div>
           <!-- Locations widget-->
-          <div class="widget">
+          <div class="widget widget_common">
             <h3 class="widget__title">Locations
             </h3>
             <div class="widget__location">
-              <p class="widget__addr">9863 - 9867 Mill Road,<br>Cambridge, MG09 99HT
+              <p class="widget__info">9863 - 9867 Mill Road,<br>Cambridge, MG09 99HT
               </p>
-              <p class="widget__phone">Freephone:&nbsp;<a href="tel:+18005596580" class="widget__number">+1 800 559 6580</a>
+              <p class="widget__info">Freephone:&nbsp;<a href="tel:+18005596580" class="widget__number">+1 800 559 6580</a>
               </p>
             </div>
             <div class="widget__location">
-              <p class="widget__addr">9870 St Vincent Place,<br>Glasgow, DC 45 Fr 45.
+              <p class="widget__info">9870 St Vincent Place,<br>Glasgow, DC 45 Fr 45.
               </p>
-              <p class="widget__phone">Freephone:&nbsp;<a href="tel:+18005596580" class="widget__number">+1 800 559 6580</a>
+              <p class="widget__info">Freephone:&nbsp;<a href="tel:+18005596580" class="widget__number">+1 800 559 6580</a>
               </p>
             </div>
           </div>
           <!-- Social widget-->
-          <div class="widget">
+          <div class="widget widget_extra">
             <h3 class="widget__title">Follow us
             </h3>
             <ul class="social">

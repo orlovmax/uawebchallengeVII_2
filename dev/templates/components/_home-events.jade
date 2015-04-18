@@ -1,8 +1,13 @@
 +b('section').screen_events
+	// Parallax container
+	+b('div').parallax.js-parallax
+		+e('div').inner
+			+e('div').number_accent._left.js-parallaxItem 03
+
+	// Section content
 	.container
-		+e('div').number_accent 03
-		+e('div').info
-			+e('h2').title_light Events
+		+e('div').info_right
+			+e('h2').title_light._events Events
 
 			// Scroller
 			+b('ul').scroller

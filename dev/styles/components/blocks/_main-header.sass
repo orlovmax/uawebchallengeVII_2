@@ -1,0 +1,50 @@
+// page main header
+.main-header
+	position: relative
+	width: 100%
+	min-height: 120px
+	background: $c-light url('../img/bg/hdr.jpg') top center no-repeat
+	+bg-cover
+	+clearfix
+
+// Page logo
+.logo
+	float: left
+	margin-top: 28px
+	font-family: $f-serif
+	font-size: 50px
+	line-height: 50px
+	word-spacing: 5px
+	color: $c-dark
+	+gs-col(6)
+	@media screen and (max-width: 800px)
+		text-align: center
+		+gs-col(12)
+
+// Page navigation
+.nav
+	float: left
+	margin: 38px 0 35px
+	white-space: nowrap
+	+gs-col(6)
+	@media screen and (max-width: 800px)
+		text-align: center
+		+gs-col(12)
+
+	&__item
+		display: inline-block
+		white-space: normal
+
+	&__link
+		display: block
+		padding: 12px 20px
+		font-family: $f-serif
+		font-size: 18px
+		color: $c-dark
+		+transition(all, .5s)
+		@media screen and (max-width: 480px)
+			padding: 12px
+
+		&.is-active, &:hover
+			background-color: $c-accent
+			color: #fefefe

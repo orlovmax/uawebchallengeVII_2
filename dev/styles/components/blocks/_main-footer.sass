@@ -1,0 +1,20 @@
+// Page footer
+.main-footer
+	position: relative
+	width: 100%
+	padding: 62px 0 165px
+	background: $c-light url('../img/pattern.png') repeat
+	+clearfix
+	@media screen and (max-width: 960px)
+		padding: 40px 0 100px
+	@media screen and (max-width: 720px)
+		padding: 30px 0 60px
+
+	// Page copyrights
+	&__copyright
+		display: block
+		font-family: $f-myr
+		font-size: 13px
+		+gs-col(12)
+		@media screen and (max-width: 720px)
+			text-align: center

@@ -21,18 +21,19 @@
 		opacity: $grid-opacity
 
 // layout mixin
-=layout($layout-url: "../img/layout.jpg", $position: 0, $layout-opacity: 0.5, $grid-opacity: 0, $cell-width: 10px, $cell-height: 10px, $line-color: white)
+=layout($layout-url: "../img/layout.jpg", $position: auto, $layout-opacity: 0.5, $grid-opacity: 0, $cell-width: 10px, $cell-height: 10px, $line-color: white)
 	position: relative
 	width: 100%
 	margin: 0 auto
 	overflow-x: hidden
 	&:before
+		@if #{$position} != 'auto'
+			position: absolute
+			left: $position
 		content: url($layout-url)
 		display: inline-block
-		position: absolute
 		width: 100%
 		top: 0
-		left: $position
 		z-index: 100
 		text-align: center
 		-webkit-opacity: $layout-opacity
