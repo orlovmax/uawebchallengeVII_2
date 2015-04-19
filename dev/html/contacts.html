@@ -32,6 +32,7 @@
     <script src="js/live.js"></script><!-- /build -->
   </head>
   <body>
+    <!-- Here comes page content-->
     <!-- Main header information-->
     <!-- Page header-->
     <header class="main-header">
@@ -56,31 +57,31 @@
         </nav>
       </div>
     </header>
-    <!-- Here comes page content-->
     <!-- Map section-->
-    <section id="gmap" class="gmap"></section>
+    <section class="gmap js-map">
+      <div id="gmap" class="gmap__container">
+      </div>
+      <div class="gmap__info">
+        <h3 class="gmap__addr">8901 Marmora Road,<br>Glasgow, D04 89GR.
+        </h3>
+      </div>
+    </section>
     <!-- Contact form-->
-    <section class="screen screen_dark">
+    <section class="screen screen_contacts screen_dark">
       <div class="container">
-        <h2 class="screen__title screen__title_light">Contact form
+        <h2 class="screen__title screen__title_contacts screen__title_light">Contact form
         </h2>
         <!-- Contact form-->
         <form action="form/" method="post" class="form js-form">
-          <div class="form__element">
+          <div class="form__group form__group_left">
             <input name="name" type="text" placeholder="Name" required="required" data-validation="length illegal-field" data-validation-length="2-100" data-validation-error-msg="Field is empty or contain invalid characters" class="form__field"/>
-          </div>
-          <div class="form__element">
-            <input name="email" type="email" placeholder="Email" required="required" data-validation="email" data-validation-error-msg="Field is empty or contain invalid characters" data-validation-allowing="-_." class="form__field"/>
-          </div>
-          <div class="form__element">
+            <input name="email" type="email" placeholder="E-mail" required="required" data-validation="email" data-validation-error-msg="Field is empty or contain invalid characters" data-validation-allowing="-_." class="form__field"/>
             <input name="phone" type="tel" placeholder="Phone" required="required" data-validation="phone" data-validation-error-msg="Field is empty or contain invalid characters" data-validation-allowing="-_." class="form__field"/>
           </div>
-          <div class="form__element">
-            <textarea name="message" placeholder="Message" required="required" data-validation="length illegal-text" data-validation-length="min3" data-validation-error-msg="Field is empty or contain invalid characters" class="form__field">
+          <div class="form__group form__group_right">
+            <textarea name="message" placeholder="Message" required="required" data-validation="length illegal-text" data-validation-length="min3" data-validation-error-msg="Field is empty or contain invalid characters" class="form__area">Message
             </textarea>
-          </div>
-          <div class="form__element form__element_submit">
-            <input name="submit" type="submit" value="Submit" class="form__submit js-submit"/>
+            <input name="submit" type="submit" value="Send message" class="common-btn form__submit js-submit"/>
           </div>
         </form>
       </div>
@@ -142,7 +143,7 @@
         </p>
       </div>
     </footer>
-    <!-- Browser update screen--><!--[if lt IE 8]><div class="browser-msg"><h2 class="browser-msg__title">Houston we've had a problem</h2><p class="browser-msg__info">It looks like you’re using an insecure version of Internet Explorer.<br>Using an outdated browser makes your computer unsafe.</p><h3 class="browser-msg__sub">For the best experience on the web, please update your browser.</h3><ul class="browser-msg__list"><li class="browser-msg__item"><a href="http://www.google.com/chrome" title="Google Chrome"><span class="browser-item__img chrome"></span><h2 class="browser-item__title">Google Chrome</h2><p class="browser-item__descr">Built for the modern web and designed to be fast in every possible way.</p><p class="browser-item__note">Visit official website for more info</p></a></li><li class="browser-msg__item"><a href="http://www.firefox.com/" title="Mozilla Firefox"><span class="browser-item__img firefox"></span><h2 class="browser-item__title">Mozilla Firefox</h2><p class="browser-item__descr">Committed to you, your privacy and an open Web.</p><p class="browser-item__note">Visit official website for more info</p></a></li><li class="browser-msg__item"><a href="http://www.apple.com/safari/" title="Apple Safari"><span class="browser-item__img safari"></span><h2 class="browser-item__title">Safari</h2><p class="browser-item__descr">The smartest way to surf. Wait less and browse more.</p><p class="browser-item__note">Visit official website for more info</p></a></li><li class="browser-msg__item"><a href="http://www.opera.com/" title="Opera"><span class="browser-item__img opera"></span><h2 class="browser-item__title">Opera</h2><p class="browser-item__descr">Made to discover. Get a better experience.</p><p class="browser-item__note">Visit official website for more info</p></a></li><li class="browser-msg__item"><a href="http://windows.microsoft.com/ie" title="Microsoft Internet Explorer"><span class="browser-item__img ie"></span><h2 class="browser-item__title">Internet Explorer</h2><p class="browser-item__descr">Fast and fluid. Stay safer as you browse.</p><p class="browser-item__note">Visit official website for more info</p></a></li></ul><p class="browser-msg__info">Thank you :)</p></div><![endif]-->
+    <!-- Browser update screen--><!--[if lt IE 9]><div class="browser-msg"><h2 class="browser-msg__title">Houston we've had a problem</h2><p class="browser-msg__info">It looks like you’re using an insecure version of Internet Explorer.<br>Using an outdated browser makes your computer unsafe.</p><h3 class="browser-msg__sub">For the best experience on the web, please update your browser.</h3><ul class="browser-msg__list"><li class="browser-msg__item"><a href="http://www.google.com/chrome" title="Google Chrome"><span class="browser-item__img chrome"></span><h2 class="browser-item__title">Google Chrome</h2><p class="browser-item__descr">Built for the modern web and designed to be fast in every possible way.</p><p class="browser-item__note">Visit official website for more info</p></a></li><li class="browser-msg__item"><a href="http://www.firefox.com/" title="Mozilla Firefox"><span class="browser-item__img firefox"></span><h2 class="browser-item__title">Mozilla Firefox</h2><p class="browser-item__descr">Committed to you, your privacy and an open Web.</p><p class="browser-item__note">Visit official website for more info</p></a></li><li class="browser-msg__item"><a href="http://www.apple.com/safari/" title="Apple Safari"><span class="browser-item__img safari"></span><h2 class="browser-item__title">Safari</h2><p class="browser-item__descr">The smartest way to surf. Wait less and browse more.</p><p class="browser-item__note">Visit official website for more info</p></a></li><li class="browser-msg__item"><a href="http://www.opera.com/" title="Opera"><span class="browser-item__img opera"></span><h2 class="browser-item__title">Opera</h2><p class="browser-item__descr">Made to discover. Get a better experience.</p><p class="browser-item__note">Visit official website for more info</p></a></li><li class="browser-msg__item"><a href="http://windows.microsoft.com/ie" title="Microsoft Internet Explorer"><span class="browser-item__img ie"></span><h2 class="browser-item__title">Internet Explorer</h2><p class="browser-item__descr">Fast and fluid. Stay safer as you browse.</p><p class="browser-item__note">Visit official website for more info</p></a></li></ul><p class="browser-msg__info">Thank you :)</p></div><![endif]-->
     <!-- Body external resources--><!-- build:js js/vendor/vendor.min.js -->
     <script src="js/vendor/vendor.js"></script><!-- /build -->
     <!-- build:js js/assembled.min.js -->

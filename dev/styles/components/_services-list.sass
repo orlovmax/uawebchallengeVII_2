@@ -1,0 +1,60 @@
+// Services page list
+.services
+	list-style: none
+	+gs-col(12)
+
+	// Service item
+	&__item
+		clear: both
+		width: 100%
+		margin-bottom: 69px
+		+clearfix
+
+	// Image
+	&__item-thumb
+		float: left
+		width: 270px
+		height: 270px
+		overflow: hidden
+		+rounded(50%)
+		@media screen and (max-width: 800px)
+			display: none
+
+	&__item-img
+		display: block
+		width: 100%
+
+	// Description
+	&__item-info
+		margin-left: 303px
+		@media screen and (max-width: 800px)
+			margin-left: 0
+
+	&__item-title
+		margin-bottom: 40px
+		font-family: $f-serif
+		font-size: 48px
+		line-height: 32px
+		color: $c-dark
+		@media screen and (max-width: 800px)
+			line-height: 1
+		@media screen and (max-width: 720px)
+			font-size: 30px
+
+	&__item-descr
+		margin-bottom: 10px
+		font-family: $f-serif
+		font-size: 26px
+		line-height: 32px
+		color: $c-dark
+
+	&__item-excerpt
+		margin-bottom: 30px
+		font-family: $f-light
+		font-size: 13px
+		line-height: 26px
+		color: $c-dark
+
+	&__btn
+		display: inline-block
+		padding: 11px 23px

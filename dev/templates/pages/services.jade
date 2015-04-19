@@ -1,11 +1,14 @@
 extends ../layouts/main
 
 block variables
+	- var pageLang = 'en';
 	- var pageName = 'Services';
 	- var pageTitle = 'Poultry farm | Services';
 	- var pageDescription = 'You`ll love our chicken';
 
 block content
+	// Main header information
+	include ../components/blocks/_header
 
 	// Services list
 	include ../components/_services-list
@@ -15,3 +18,9 @@ block content
 
 	// Special offers section
 	include ../components/_services-offers
+
+	// Widgets section
+	mixin widgets()
+
+	// Main footer
+	include ../components/blocks/_footer

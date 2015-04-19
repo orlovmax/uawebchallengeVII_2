@@ -1,0 +1,67 @@
+// Testimonial area
+.testimonial
+	+gs-col(12)
+
+	// Customer avatar
+	&__picture
+		float: left
+		margin-bottom: 25px
+		+size(270px, 270px)
+		+rounded(50%)
+		@media screen and (max-width: 800px)
+			display: none
+
+	// Testimonial quote
+	&__bq
+		margin-left: 300px
+		@media screen and (max-width: 800px)
+			margin-left: 0
+
+	&__title
+		max-width: 640px
+		margin-bottom: 22px
+		padding-top: 30px
+		font-family: $f-serif
+		font-size: 26px
+		color: $c-light
+		@media screen and (max-width: 800px)
+			padding-top: 0
+
+		&:before, &:after
+			content: '\201C'
+			display: inline-block
+			font-size: 26px
+			line-height: 32px
+			color: $c-light
+		&:after
+			margin-left: -5px
+
+	&__text
+		max-width: 780px
+		font-family: $f-light
+		font-size: 13px
+		line-height: 26px
+		color: $c-light
+		@media screen and (max-width: 800px)
+			margin-bottom: 20px
+
+	// Author meta information
+	&__author
+		max-width: 270px
+		clear: both
+		font-family: $f-light
+		font-size: 13px
+		line-height: 1
+		text-align: center
+		color: $c-faded
+		@media screen and (max-width: 800px)
+			width: 100%
+			max-width: 100%
+			text-align: right
+
+	&__author-name
+		margin-bottom: 3px
+		font-family: $f-serif
+		font-size: 26px
+		line-height: 1
+		color: $c-light

@@ -1,46 +1,47 @@
-+b('section').screen_light._widgets
-	.container
-		// Hidden section title (just useful thing)
-		+e('h2').title_dark._hidden Get in touch!
+mixin widgets(modifier)
+	+b('section').screen_light._widgets(class=(modifier ? 'screen_widgets_' + modifier : ''))
+		.container
+			// Hidden section title (just useful thing)
+			+e('h2').title_dark._hidden Get in touch!
 
-		// Widgets area
-		.widgets
-			// Common text widget
-			+b.widget_common
-				+e('h3').title About us
-				+e('p').info Lorem ipsum dolor sit amet consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonu mmy hendrerit mauris. Phasellu porta.
-					br
-					| Fusce suscipit vari.
-
-			// Locations widget
-			+b.widget_common
-				+e('h3').title Locations
-				+e('div').location
-					+e('p').info
-						| 9863 - 9867 Mill Road,
+			// Widgets area
+			.widgets
+				// Common text widget
+				+b.widget_common
+					+e('h3').title About us
+					+e('p').info Lorem ipsum dolor sit amet consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonu mmy hendrerit mauris. Phasellu porta.
 						br
-						| Cambridge, MG09 99HT
-					+e('p').info
-						| Freephone:&nbsp;
-						+e.number(href='tel:+18005596580') +1 800 559 6580
-				+e('div').location
-					+e('p').info
-						| 9870 St Vincent Place,
-						br
-						| Glasgow, DC 45 Fr 45.
-					+e('p').info
-						| Freephone:&nbsp;
-						+e.number(href='tel:+18005596580') +1 800 559 6580
+						| Fusce suscipit vari.
 
-			// Social widget
-			+b.widget_extra
-				+e('h3').title Follow us
-				+b('ul').social
-					+e.item
-						+e.link.iconfont.iconfont_gplus(href='#') Google plus
-					+e.item
-						+e.link.iconfont.iconfont_pin(href='#') Pinterest
-					+e.item
-						+e.link.iconfont.iconfont_twi(href='#') Twitter
-					+e.item
-						+e.link.iconfont.iconfont_fb(href='#') Facebook
+				// Locations widget
+				+b.widget_common
+					+e('h3').title Locations
+					+e('div').location
+						+e('p').info
+							| 9863 - 9867 Mill Road,
+							br
+							| Cambridge, MG09 99HT
+						+e('p').info
+							| Freephone:&nbsp;
+							+e.number(href='tel:+18005596580') +1 800 559 6580
+					+e('div').location
+						+e('p').info
+							| 9870 St Vincent Place,
+							br
+							| Glasgow, DC 45 Fr 45.
+						+e('p').info
+							| Freephone:&nbsp;
+							+e.number(href='tel:+18005596580') +1 800 559 6580
+
+				// Social widget
+				+b.widget_extra
+					+e('h3').title Follow us
+					+b('ul').social
+						+e.item
+							+e.link.iconfont.iconfont_gplus(href='#') Google plus
+						+e.item
+							+e.link.iconfont.iconfont_pin(href='#') Pinterest
+						+e.item
+							+e.link.iconfont.iconfont_twi(href='#') Twitter
+						+e.item
+							+e.link.iconfont.iconfont_fb(href='#') Facebook

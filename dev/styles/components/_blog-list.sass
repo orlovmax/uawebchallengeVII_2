@@ -1,0 +1,103 @@
+// Post preview list from blog page
+.blog-list
+	+gs-col(12)
+
+// Post preview item
+.blog-prewiew
+	position: relative
+	margin-top: 105px
+	padding-left: 40px
+	padding-bottom: 8px
+
+	// Meta information in circle
+	&__meta
+		position: absolute
+		top: -40px
+		left: 0
+		font-family: $f-serif
+		color: $c-light
+		text-align: center
+		background-color: $c-accent
+		border: 10px solid $c-light
+		+size(173px, 173px)
+		+rounded(50%)
+		@media screen and (max-width: 800px)
+			+size(150px, 150px)
+		@media screen and (max-width: 480px)
+			+size(100px, 100px)
+
+	&__date
+		display: block
+		margin: 45px 0 15px
+		font-size: 72px
+		line-height: 32px
+		letter-spacing: -2px
+		@media screen and (max-width: 800px)
+			margin-bottom: 5px
+			font-size: 50px
+		@media screen and (max-width: 480px)
+			margin: 15px 0 0
+			font-size: 40px
+
+	&__month
+		font-size: 30px
+		line-height: 32px
+		letter-spacing: -2px
+		@media screen and (max-width: 800px)
+			font-size: 25px
+		@media screen and (max-width: 800px)
+			font-size: 20px
+
+	// Picture
+	&__thumb
+		height: 440px
+		margin-bottom: 35px
+		overflow: hidden
+		@media screen and (max-width: 800px)
+			height: auto
+
+	&__img
+		display: block
+		width: 100%
+
+	// Post information
+	&__title
+		margin-bottom: 12px
+		font-family: $f-serif
+		font-size: 26px
+		line-height: 32px
+		color: $c-dark
+
+	&__excerpt
+		margin-bottom: 33px
+		font-family: $f-light
+		font-size: 13px
+		line-height: 26px
+		color: $c-dark
+
+	&__btn
+		padding: 11px 24px
+
+// Blog preview list paginator
+.paginator
+	margin-top: 85px
+	list-style: none
+	@media screen and (max-width: 480px)
+		text-align: center
+
+	&__item
+		display: inline-block
+		&_page
+			margin: 0 5px
+		&_next
+			margin-left: 15px
+		&_prev
+			margin-right: 15px
+
+	&__link
+		font-family: $f-serif
+		font-size: 26px
+		line-height: 32px
+		color: $c-dark
+		&:hover
+			text-decoration: underline

@@ -1,0 +1,51 @@
+// Contact form
+.form
+	// Field group
+	&__group
+		+gs-col(6)
+		@media screen and (max-width: 800px)
+			+gs-col(12)
+
+		&_left
+			float: left
+
+		&_right
+			float: right
+
+	// Input field
+	&__field
+		display: block
+		width: 100%
+		height: 55px
+		margin-bottom: 35px
+		padding: 5px 0 0 20px
+		font-family: $f-light
+		font-size: 13px
+		color: $c-dark
+
+		&:-moz-placeholder, &::-webkit-input-placeholder
+			font-family: $f-light
+			font-size: 13px
+			color: $c-faded
+
+	// Textarea
+	&__area
+		display: block
+		width: 100%
+		height: 235px
+		margin-bottom: 55px
+		padding: 20px 0 0 20px
+		font-family: $f-light
+		font-size: 13px
+		color: $c-dark
+
+		&:-moz-placeholder, &::-webkit-input-placeholder
+			font-family: $f-light
+			font-size: 13px
+			color: $c-faded
+
+	// Submit button
+	&__submit
+		float: right
+		padding: 10px 17px
+		text-align: center

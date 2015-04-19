@@ -1,11 +1,20 @@
 extends ../layouts/main
 
 block variables
+	- var pageLang = 'en';
 	- var pageName = 'Blog';
 	- var pageTitle = 'Poultry farm | Blog';
 	- var pageDescription = 'You`ll love our chicken';
 
 block content
+	// Main header information
+	include ../components/blocks/_header
 
 	// Blog list
 	include ../components/_blog-list
+
+	// Widgets section
+	mixin widgets('blog')
+
+	// Main footer
+	include ../components/blocks/_footer

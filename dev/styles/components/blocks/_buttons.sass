@@ -1,0 +1,13 @@
+// Just a common button... I think it should be %extend
+// but I don't like chopped resulting code
+// This is issue for further refactoring
+
+.common-btn
+	font-family: $f-serif
+	font-size: 18px
+	color: #fefefe
+	background-color: $c-accent
+	+transition(all, .5s)
+
+	&.is-active, &:hover
+		+opacity(.5)

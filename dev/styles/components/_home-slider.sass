@@ -1,0 +1,60 @@
+// Home page carousel
+.carousel
+	list-style: none
+	@media screen and (max-width: 480px)
+		text-align: center
+
+	// Carousel controls
+	&__controls
+		margin-bottom: 33px
+
+	&__btn
+		display: inline-block
+		width: 71px
+		height: 71px
+		margin-right: 11px
+		border: 4px solid $c-light
+		+rounded(50%)
+		+transition(all, .5s)
+		@media screen and (max-width: 480px)
+			width: 50px
+			height: 50px
+
+		&:hover, &:hover:before
+			+opacity(.5)
+
+		&:before
+			width: 100%
+			height: 100%
+			font-size: 30px
+			line-height: 60px
+			text-align: center
+			color: $c-light
+			+transition(all, .5s)
+			@media screen and (max-width: 480px)
+				line-height: 40px
+
+	// Carousel content
+	&__item
+		display: none
+
+		&.is-visible
+			display: block
+
+		&-title
+			font-family: $f-serif
+			font-size: 90px
+			line-height: 0.89
+			letter-spacing: 4px
+			color: $c-light
+			text-transform: uppercase
+			margin-bottom: 23px
+			@media screen and (max-width: 720px)
+				font-size: 70px
+			@media screen and (max-width: 480px)
+				font-size: 50px
+
+		&-descr
+			font-family: $f-serif
+			font-size: 26px
+			color: $c-light

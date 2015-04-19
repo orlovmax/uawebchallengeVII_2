@@ -1,0 +1,17 @@
+.iconfont
+	font-size: 0
+	text-decoration: none
+	&:before
+		display: inline-block
+		font-family: "uaweb"
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+
+	@function unicode($str)
+		@return unquote("\"") + $str + unquote("\"")
+	$icons: (next: '\e804', prev: '\e805', twi: '\e806', loc: '\e807', fb: '\e808', pin: '\e809', gplus: '\e80a')
+	@each $icon in $icons
+		&_#{nth($icon, 1)}
+			&:before
+				content: unicode(nth($icon, 2))

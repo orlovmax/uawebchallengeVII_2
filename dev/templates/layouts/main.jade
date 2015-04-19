@@ -1,9 +1,10 @@
-- var pageLang = 'en';
-
 //- Here comes the next mixins:
 //- outdated browser message (depends of page language)
 //- bemto mixin for Jade and BEM magic
 include ../helpers/mixins
+
+//- Common used mixin-blocks
+include ../components/blocks/blocks
 
 //- This block will be filled with required variables
 block variables
@@ -18,17 +19,8 @@ html(lang='en')
 		include ../components/general/_head-src
 
 	body
-		// Main header information
-		include ../components/blocks/_header
-
 		// Here comes page content
 		block content
-
-		// Widgets section
-		include ../components/blocks/_widgets
-
-		// Main footer
-		include ../components/blocks/_footer
 
 		// Browser update screen
 		mixin ie-out()

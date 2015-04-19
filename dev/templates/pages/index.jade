@@ -1,11 +1,14 @@
 extends ../layouts/main
 
 block variables
+	- var pageLang = 'en';
 	- var pageName = 'Home';
 	- var pageTitle = 'Poultry farm';
 	- var pageDescription = 'You`ll love our chicken';
 
 block content
+	// Main header information
+	include ../components/blocks/_header
 
 	// Slider section
 	include ../components/_home-slider
@@ -26,4 +29,10 @@ block content
 	include ../components/_home-testimonials
 
 	// Map section
-	include ../components/blocks/_map
+	include ../components/_home-map
+
+	// Widgets section
+	mixin widgets()
+
+	// Main footer
+	include ../components/blocks/_footer

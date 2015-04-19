@@ -1,0 +1,60 @@
+// Offers list
+.offers
+	list-style: none
+
+	// Offer widget
+	&__item
+		float: left
+		min-height: 330px
+		margin-bottom: 50px
+		text-align: center
+		+gs-col(3)
+		@media screen and (max-width: 1200px)
+			min-height: 380px
+		@media screen and (max-width: 960px)
+			min-height: 330px
+		@media screen and (max-width: 800px)
+			+gs-col(6)
+
+		// Number in circle
+		&:before
+			content: ''
+			display: inline-block
+			margin-bottom: 28px
+			font-family: $f-serif
+			font-size: 60px
+			line-height: 95px
+			letter-spacing: -3px
+			color: $c-light
+			border: 7px solid $c-accent
+			+size(110px, 110px)
+			+rounded(50%)
+
+		&_first
+			&:before
+				content: '1.'
+		&_second
+			&:before
+				content: '2.'
+		&_third
+			&:before
+				content: '3.'
+		&_fourth
+			&:before
+				content: '4.'
+
+		// Offers widget information
+		&-title
+			margin-bottom: 19px
+			font-family: $f-serif
+			font-size: 26px
+			line-height: 1
+			color: $c-light
+
+		&-descr
+			display: inline-block
+			max-width: 250px
+			font-family: $f-light
+			font-size: 13px
+			line-height: 26px
+			color: $c-faded
