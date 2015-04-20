@@ -10,7 +10,7 @@ mixin contacts-form()
 				required='required',
 				data-validation='length illegal-field',
 				data-validation-length='2-100',
-				data-validation-error-msg='Field is empty or contain invalid characters'
+				data-validation-error-msg='Name field is empty or contain invalid characters'
 				)
 
 			+e('input').field(
@@ -19,7 +19,7 @@ mixin contacts-form()
 				placeholder='E-mail',
 				required='required',
 				data-validation='email',
-				data-validation-error-msg='Field is empty or contain invalid characters',
+				data-validation-error-msg='E-mail field is empty or contain invalid characters',
 				data-validation-allowing='-_.',
 				)
 
@@ -28,9 +28,9 @@ mixin contacts-form()
 				type='tel',
 				placeholder='Phone',
 				required='required',
-				data-validation='phone',
-				data-validation-error-msg='Field is empty or contain invalid characters',
-				data-validation-allowing='-_.',
+				data-validation='number',
+				data-validation-error-msg='Phone field is empty or contain invalid characters',
+				data-validation-allowing='-()+',
 				)
 
 		+e('div').group_right
@@ -40,13 +40,13 @@ mixin contacts-form()
 				required='required',
 				data-validation='length illegal-text',
 				data-validation-length="min3",
-				data-validation-error-msg='Field is empty or contain invalid characters'
+				data-validation-error-msg='Message field is empty or contain invalid characters'
 				) Message
 
-			+e('input').submit.common-btn.js-submit(
-				name='submit',
-				type='submit',
-				value='Send message'
-				)
+		+e('input').submit.common-btn.js-submit(
+			name='submit',
+			type='submit',
+			value='Send message'
+			)
 
 		block

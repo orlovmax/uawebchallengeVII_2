@@ -229,15 +229,22 @@ module.exports = function(grunt) {
         bower_concat: {
           vendor: {
             dest: '<%= dev.js %>/vendor/vendor.js',
-            exclude: ['respond', 'html5shiv']
+            exclude: ['respond', 'html5shiv'],
+            mainFiles: {
+              'd3': 'd3.js',
+              'jquery-form-validator': 'form-validator/jquery.form-validator.js'
+            },
+            dependencies: {
+						  'jquery-form-validator': 'jquery'
+						}
           },
           ie: {
             dest: '<%= dev.js %>/ie/ie.js',
-            exclude: ['jquery'],
+            exclude: ['jquery', 'd3', 'jquery-form-validator'],
             mainFiles: {
               'html5shiv': 'dist/html5shiv-printshiv.js'
             }
-          }
+          },
         },
 
       //Delete .gitkeep files. If you don't use Bower - just run `grunt clean`

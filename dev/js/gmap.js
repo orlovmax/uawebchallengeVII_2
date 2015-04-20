@@ -27,7 +27,7 @@ function init() {
 	};
 	var mapElement = document.getElementById('gmap');
 	var map = new google.maps.Map(mapElement, mapOptions);
-	var locations = [['Poultry farm', '', '', '', '', 35.396505, -119.116333, '../img/marker.png']];
+	var locations = [['Poultry farm', '', '', '', '', 35.396505, -119.116333, 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAA4BAMAAACI+Cx1AAAAMFBMVEUwMzQwMzQwMzQwMzQwMzQwMzQwMzQwMzQwMzQwMzQwMzQwMzQwMzQwMzQwMzQwMzSJLU9HAAAAD3RSTlMAESIzRFVmd4iZqrvM3e5GKvWZAAABUklEQVQ4jY2SsU4CQRCG/0MiQWPCAxhCZaudnVDQ4yNQ23iV7b2CjTWPgG9AYWMHPgGhsL7EGC4Ejt9iZnZnLxT+zV2+vZ2Z/W4BSTYe3yFJ9lSS/Bw51JqRJFlPIyuoOYT91wypFJ2VkfFV2IND3EnPpWfMAeAiQfwFgGedQz+ve0AmHd6Am7Vt7pAkPwB73QBXJHnoIZSpgKGuAcA5SR70XI86/oIke5jLkmRCkiMs3SmleI4wJwBcnmCdfzLduz7RY3FilkIeycxDkvxyZ9trWe9gC7SbrlYA1g2n0+j+uNBnmCmmCs1iRG+ZsDy9QZSJAaDv0c4JsvwIyzzTe4WZYwNltxHtzVo3smC8Fdm7McwDGwU2MVQHJF5JchtZ29gqMtg1nzpmXh0yr5Vn6nXjmf6oPGGF82npO5+WjvNpyUrn0xU8DhqsS36jmfuX0PUPxV4gOv0fYnUAAAAASUVORK5CYII=']];
 	for (i = 0; i < locations.length; i++) {
 		if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
 		if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}

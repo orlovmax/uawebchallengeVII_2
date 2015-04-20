@@ -6,6 +6,8 @@
   "dependencies": {
     "jquery": "1.11.1",
     "respond": "~1.4.2",
-    "html5shiv": "~3.7.2"
+    "html5shiv": "~3.7.2",
+    "d3": "~3.5.5",
+    "jquery-form-validator": "~2.1.47"
   }
 }

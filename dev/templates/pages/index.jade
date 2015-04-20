@@ -10,13 +10,13 @@ block content
 	// Main header
 	+header()
 		+logo()
-		+nav()._blog
+		+nav()
 
 
 	// Slider section
-	+section()._slider._slider_first
+	+section()._slider._slider_first.js-carousel
 		// Parallax stuff
-		+parallax()
+		+parallax().js-parallax
 			+e('div').number_light._left.js-parallaxItem 01
 
 		.container
@@ -29,7 +29,7 @@ block content
 	// Welcome section
 	+section()._welcome
 		// Parallax stuff
-		+parallax()
+		+parallax().js-parallax
 			+e('div').number_dark._right.js-parallaxItem 02
 
 		.container
@@ -44,7 +44,7 @@ block content
 	// Events section
 	+section()._events
 		// Parallax stuff
-		+parallax()
+		+parallax().js-parallax
 			+e('div').number_accent._left.js-parallaxItem 03
 
 		.container
@@ -58,7 +58,7 @@ block content
 	// About section
 	+section()._about
 		// Parallax stuff
-		+parallax()
+		+parallax().js-parallax
 			+e('div').number_light._right.js-parallaxItem 04
 
 		.container

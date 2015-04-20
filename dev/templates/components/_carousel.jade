@@ -3,11 +3,11 @@ mixin carousel()
 	+b('ul').carousel&attributes(attributes)
 		// Carousel controls
 		+e.controls
-			+e.btn.iconfont.iconfont_prev(href='#') Previous
-			+e.btn.iconfont.iconfont_next(href='#') Next
+			+e.btn.iconfont.iconfont_prev.js-carouselPrev(href='#') Previous
+			+e.btn.iconfont.iconfont_next.js-carouselNext(href='#') Next
 
 		// Carousel item
-		+e.item.is-visible(data-bg='first')
+		+e.item.js-carouselItem.is-visible(data-bg='first')
 			+e('h3').item-title_light
 				| You'll
 				br
@@ -17,23 +17,23 @@ mixin carousel()
 			+e('p').item-descr_light Vestibulum libero nisl porta vel scele
 
 		// Carousel item
-		+e.item(data-bg='second')
+		+e.item.js-carouselItem(data-bg='second')
 			+e('h3').item-title_light
-				| You'll
+				| Lorem
 				br
-				| love our
+				| ipsum
 				br
-				| chicken
-			+e('p').item-descr_light Vestibulum libero nisl porta vel scele
+				| dolor
+			+e('p').item-descr_light Lorem ipsum dolor sit amet
 
 		// Carousel item
-		+e.item(data-bg='third')
+		+e.item.js-carouselItem(data-bg='third')
 			+e('h3').item-title_light
-				| You'll
+				| Lorem
 				br
-				| love our
+				| libero
 				br
-				| chicken
-			+e('p').item-descr_light Vestibulum libero nisl porta vel scele
+				| nisl
+			+e('p').item-descr_light You'll love our chicken
 
 		block
