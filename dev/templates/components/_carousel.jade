@@ -1,0 +1,39 @@
+// Carousel
+mixin carousel()
+	+b('ul').carousel&attributes(attributes)
+		// Carousel controls
+		+e.controls
+			+e.btn.iconfont.iconfont_prev(href='#') Previous
+			+e.btn.iconfont.iconfont_next(href='#') Next
+
+		// Carousel item
+		+e.item.is-visible(data-bg='first')
+			+e('h3').item-title_light
+				| You'll
+				br
+				| love our
+				br
+				| chicken
+			+e('p').item-descr_light Vestibulum libero nisl porta vel scele
+
+		// Carousel item
+		+e.item(data-bg='second')
+			+e('h3').item-title_light
+				| You'll
+				br
+				| love our
+				br
+				| chicken
+			+e('p').item-descr_light Vestibulum libero nisl porta vel scele
+
+		// Carousel item
+		+e.item(data-bg='third')
+			+e('h3').item-title_light
+				| You'll
+				br
+				| love our
+				br
+				| chicken
+			+e('p').item-descr_light Vestibulum libero nisl porta vel scele
+
+		block

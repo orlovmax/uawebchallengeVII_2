@@ -7,20 +7,48 @@ block variables
 	- var pageDescription = 'You`ll love our chicken';
 
 block content
-	// Main header information
-	include ../components/blocks/_header
+	// Main header
+	+header()
+		+logo()
+		+nav()._services
+
 
 	// Services list
-	include ../components/_services-list
+	+section()._light._services
+		.container
+			+e('h2').title_dark._services What we do
+
+			+services()
+
 
 	// Extra service section
-	include ../components/_services-extra
+	+section()._services-extra
+		.container
+			+e('h2').title_light._services-extra
+				| Fresh from the farm!
+				br
+				| Low fat, protein rich eggs!
+			+e('p').descr_light._services-extra Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus.
+			+e.btn_extra.common-btn(href='#') More
+
 
 	// Special offers section
-	include ../components/_services-offers
+	+section()._dark._services-offers
+		.container
+			+e('h2').title_light._services-offers Special offers
+
+			+offers()
+
 
 	// Widgets section
-	mixin widgets()
+	+section()._light._widgets
+		.container
+			//- Hidden section title (just useful thing)
+			+e('h2').title_dark._hidden Get in touch!
+
+			// Widgets
+			+widgets()
+
 
 	// Main footer
-	include ../components/blocks/_footer
+	+footer()

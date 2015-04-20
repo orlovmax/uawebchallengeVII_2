@@ -178,8 +178,17 @@
 
 	&_widgets
 		padding: 247px 0 40px
+
+		@media screen and (max-width: 960px)
+			padding-top: 150px
+		@media screen and (max-width: 720px)
+			padding-top: 100px
+		@media screen and (max-width: 480px)
+			padding-top: 50px
+
 		&_blog
 			padding: 47px 0 40px
+
 
 // Page section info
 .screen__info
@@ -194,6 +203,7 @@
 		float: left
 	&_right
 		float: right
+
 
 // Page section title
 .screen__title
@@ -266,6 +276,7 @@
 	@media screen and (max-width: 480px)
 		margin-bottom: 20px
 
+
 // Page section description
 .screen__descr
 	margin-bottom: 23px
@@ -296,6 +307,7 @@
 		color: $c-dark
 	&_light
 		color: $c-light
+
 
 // Page section button
 .screen__btn

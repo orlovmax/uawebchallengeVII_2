@@ -7,14 +7,30 @@ block variables
 	- var pageDescription = 'You`ll love our chicken';
 
 block content
-	// Main header information
-	include ../components/blocks/_header
+	// Main header
+	+header()
+		+logo()
+		+nav()._blog
 
-	// Blog list
-	include ../components/_blog-list
+
+	// Blog list section
+	+section()._light._blog
+		.container
+			+e('h2').title_dark._blog Blog
+
+			// Previews
+			+blog-list()
+
 
 	// Widgets section
-	mixin widgets('blog')
+	+section()._light._widgets._widgets_blog
+		.container
+			//- Hidden section title (just useful thing)
+			+e('h2').title_dark._hidden Get in touch!
+
+			// Widgets
+			+widgets()
+
 
 	// Main footer
-	include ../components/blocks/_footer
+	+footer()

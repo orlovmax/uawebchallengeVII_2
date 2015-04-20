@@ -7,32 +7,100 @@ block variables
 	- var pageDescription = 'You`ll love our chicken';
 
 block content
-	// Main header information
-	include ../components/blocks/_header
+	// Main header
+	+header()
+		+logo()
+		+nav()._blog
+
 
 	// Slider section
-	include ../components/_home-slider
+	+section()._slider._slider_first
+		// Parallax stuff
+		+parallax()
+			+e('div').number_light._left.js-parallaxItem 01
+
+		.container
+			//- Hidden section title (just useful thing)
+			+e('h2').title_light._hidden Hi everyone!
+			+e('div').info_right
+				+carousel()
+
 
 	// Welcome section
-	include ../components/_home-welcome
+	+section()._welcome
+		// Parallax stuff
+		+parallax()
+			+e('div').number_dark._right.js-parallaxItem 02
+
+		.container
+			.container
+			+e('div').info_left
+				+e('h2').title_dark._welcome Welcome
+				+e('h3').descr_dark Duisac turpis. Integer rutrum ante
+				+e('p').excerpt_dark Mauris fermeum dictum magn. Sed loreet aliquam leote llus dolor dapibus eget elementum vel curs elfend elit. Aenean aucto. wisi et urna. Aliqat volutpat.
+				+e('p').excerpt_dark Duisac turpis. Integer rutrum ante eu lacuestilum libero nisl porta vel sceleri eget malesuada at neqVivamus eget nibh. Etiam ursus leo vel metus. Nulla facil nec eroestibulum ante ipsu pharetra auue nec augentum. Donec ielit vel ip elit magnaec porta diam eu massa. Quise diam lorem interdum vitaapibus ac scelee vitae pedec eget tellus non erat lacinia ferme.
+
 
 	// Events section
-	include ../components/_home-events
+	+section()._events
+		// Parallax stuff
+		+parallax()
+			+e('div').number_accent._left.js-parallaxItem 03
+
+		.container
+			+e('div').info_right
+				+e('h2').title_light._events Events
+
+				// Events scroller
+				+scroller()
+
 
 	// About section
-	include ../components/_home-about
+	+section()._about
+		// Parallax stuff
+		+parallax()
+			+e('div').number_light._right.js-parallaxItem 04
+
+		.container
+			+e('div').info_left
+				+e('h2').title_light._about What we do
+				+e('h3').descr_light Duisac turpis. Integer rutrum ante
+				+e('p').excerpt_light Mauris fermeum dictum magn. Sed loreet aliquam leote llus dolor dapibus eget elementum vel curs elfend elit. Aenean aucto. wisi et urna. Aliqat volutpat.
+
+				+e('p').excerpt_light Duisac turpis. Integer rutrum ante eu lacuestilum libero nisl porta vel sceleri eget malesuada at neqVivamus eget nibh. Etiam ursus leo vel metus. Nulla facil nec eroestibulum ante ipsu pharetra auue nec augentum. Donec ielit vel ip elit magnaec porta diam eu massa. Quise diam lorem interdum vitaapibus ac scelee vitae pedec eget tellus non erat lacinia ferme.
+
 
 	// Quality section
-	include ../components/_home-quality
+	+section()._light._quality
+		.container
+			+e('h2').title_dark._quality Quality
+
+			// Quality widgets with diagrams
+			+quality()
+
 
 	// Testimonials section
-	include ../components/_home-testimonials
+	+section()._dark._testimonials
+		.container
+			+e('h2').title_light._testimonials Testimonials
+
+			// Testimonial item
+			+testimonial()
+
 
 	// Map section
-	include ../components/_home-map
+	+map()
+
 
 	// Widgets section
-	mixin widgets()
+	+section()._light._widgets
+		.container
+			//- Hidden section title (just useful thing)
+			+e('h2').title_dark._hidden Get in touch!
+
+			// Widgets
+			+widgets()
+
 
 	// Main footer
-	include ../components/blocks/_footer
+	+footer()

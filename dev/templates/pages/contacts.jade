@@ -7,17 +7,39 @@ block variables
 	- var pageDescription = 'You`ll love our chicken';
 
 block content
-	// Main header information
-	include ../components/blocks/_header
+	// Main header
+	+header()
+		+logo()
+		+nav()._contacts
+
 
 	// Map section
-	include ../components/_contacts-map
+	+map()
+		+e.info
+			+e('h3').addr
+				| 8901 Marmora Road,
+				br
+				| Glasgow, D04 89GR.
 
-	// Contact form
-	include ../components/_contacts-form
+
+	// Contact section
+	+section()._dark._contacts
+		.container
+			+e('h2').title_light._contacts Contact form
+
+			// Contact form
+			+contacts-form()
+
 
 	// Widgets section
-	mixin widgets()
+	+section()._light._widgets._widgets_blog
+		.container
+			//- Hidden section title (just useful thing)
+			+e('h2').title_dark._hidden Get in touch!
+
+			// Widgets
+			+widgets()
+
 
 	// Main footer
-	include ../components/blocks/_footer
+	+footer()

@@ -1,0 +1,45 @@
+// Page navigation
+.nav
+	float: left
+	margin: 38px 0 35px
+	white-space: nowrap
+	+gs-col(6)
+	@media screen and (max-width: 800px)
+		text-align: center
+		+gs-col(12)
+
+	&_blog, &_services
+		+gs-col(5)
+		+gs-push(1)
+		@media screen and (max-width: 960px)
+			+gs-col(6)
+			+gs-push(0)
+		@media screen and (max-width: 800px)
+			text-align: center
+			+gs-col(12)
+
+	&_contacts
+		text-align: right
+		@media screen and (max-width: 800px)
+			text-align: center
+
+
+	&__item
+		display: inline-block
+		white-space: normal
+
+	&__link
+		display: block
+		padding: 12px 20px
+		font-family: $f-serif
+		font-size: 18px
+		color: $c-dark
+		+transition(all, .5s)
+		@media screen and (max-width: 480px)
+			padding: 12px
+
+		&.is-active, &:hover
+			background-color: $c-accent
+			color: #fefefe
+		&.is-active
+			cursor: default
