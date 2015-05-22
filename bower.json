@@ -1,7 +1,7 @@
 {
   "name": "UaWebChallengeVII_sf",
   "description": "UaWebChallengeVII front-end dev middle-senior task. Semifinal",
-  "main": "Gruntfile.js",
+  "main": "gulpfile.js",
   "license": "MIT",
   "dependencies": {
     "jquery": "1.11.1",
