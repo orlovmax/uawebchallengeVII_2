@@ -3,37 +3,40 @@
 // ==============================
 //
 // Contents......................Here we are!
-// Elements lib..................Elements library
-// Layout tools..................Pixelperf mixin
-// GS............................Custom grid system
-// Variables.....................Project's vars
 //
-// Reset.........................Reset defaults
-// Fonts.........................Fonts
-// General styles................Abstract styles
+// Helpers.......................useful things, mixins, elements
+//   Elements....................External scss mixins
+//   Grid system.................Import fluid gs
 //
-// Main header...................Page top elements
-// Page logo.....................Site logo
-// Page nav......................main navigation
-// Screen........................Common screen
-// Parallax......................Parallax stuff
-// Map section...................Google map
-// Widgets area..................Footer widgets
-// Main footer...................Copyrights, etc
-// Buttons.......................Common button-styled links
-// Font icons....................Iconic font
+// General.......................General components and settings
+//   Fonts.......................Offline and online fonts
+//   Reset.......................Reset defaults
+//   Variables...................Settings and variables
 //
-// Carousel......................Home page screen slider
-// Events........................Home page events scroll area
-// Quality.......................Home page diagrams
-// Testimonials..................Home page testimonials
+// Blocks
+//   General.......................Some common used styles
+//   Main header...................Page top elements
+//   Page logo.....................Site logo
+//   Page nav......................main navigation
+//   Screen........................Common screen
+//   Parallax......................Parallax stuff
+//   Map section...................Google map
+//   Widgets area..................Footer widgets
+//   Main footer...................Copyrights, etc
+//   Buttons.......................Common button-styled links
+//   Font icons....................Iconic font
 //
-// Services list.................List of services
-// Offers........................Special offers items
+//   Carousel......................Home page screen slider
+//   Events........................Home page events scroll area
+//   Quality.......................Home page diagrams
+//   Testimonials..................Home page testimonials
 //
-// Blog list.....................Post preview list
+//   Services list.................List of services
+//   Offers........................Special offers items
 //
-// Contact form..................Form on contacts page
+//   Blog list.....................Post preview list
+//
+//   Contact form..................Form on contacts page
 
 
 ///////////////////////////////// HELPERS AND LIBS
@@ -53,11 +56,6 @@
 // ==============================
 @import components/helpers/_gs
 
-// ==============================
-// $Variables
-// ==============================
-@import components/helpers/_variables
-
 
 ///////////////////////////////// GENERAL COMPONENTS
 
@@ -72,9 +70,15 @@
 @import components/general/_fonts
 
 // ==============================
+// $Variables
+// ==============================
+@import components/general/_variables
+
+
+// ==============================
 // $General styles
 // ==============================
-@import components/general/_general
+@import components/_general
 
 
 ///////////////////////////////// REUSABLE COMPONENTS
@@ -128,7 +132,6 @@
 // $Font icons
 // ==============================
 @import components/blocks/_icon-font
-
 
 
 ///////////////////////////////// CUSTOM COMPONENTS
